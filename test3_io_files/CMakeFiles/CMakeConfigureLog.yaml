@@ -3021,3 +3021,598 @@ events:
         8.6 
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:99 (try_run)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+      binary: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2;/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ca35a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ca35a.dir/build.make CMakeFiles/cmTC_ca35a.dir/build
+        gmake[1]: Entering directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_ca35a.dir/detect_cuda_version.cc.o
+        /usr/bin/c++    -o CMakeFiles/cmTC_ca35a.dir/detect_cuda_version.cc.o -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/detect_cuda_version.cc
+        Linking CXX executable cmTC_ca35a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca35a.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_ca35a.dir/detect_cuda_version.cc.o -o cmTC_ca35a  /usr/lib/x86_64-linux-gnu/libcudart.so 
+        gmake[1]: Leaving directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.0
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:120 (try_run)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:180 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/utils.cmake:344 (cuda_select_nvcc_arch_flags)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:331 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+      binary: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2;/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a931a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a931a.dir/build.make CMakeFiles/cmTC_a931a.dir/build
+        gmake[1]: Entering directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_a931a.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/bin/nvcc -forward-unknown-to-host-compiler   "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -MD -MT CMakeFiles/cmTC_a931a.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_a931a.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_a931a.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_a931a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a931a.dir/link.txt --verbose=1
+        /usr/lib/nvidia-cuda-toolkit/bin/g++ @CMakeFiles/cmTC_a931a.dir/objects1.rsp -o cmTC_a931a @CMakeFiles/cmTC_a931a.dir/linkLibs.rsp -L"/usr/lib/x86_64-linux-gnu/stubs" -L"/usr/lib/x86_64-linux-gnu"
+        gmake[1]: Leaving directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.6 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:99 (try_run)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+      binary: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2;/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a50a9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a50a9.dir/build.make CMakeFiles/cmTC_a50a9.dir/build
+        gmake[1]: Entering directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_a50a9.dir/detect_cuda_version.cc.o
+        /usr/bin/c++    -o CMakeFiles/cmTC_a50a9.dir/detect_cuda_version.cc.o -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/detect_cuda_version.cc
+        Linking CXX executable cmTC_a50a9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a50a9.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_a50a9.dir/detect_cuda_version.cc.o -o cmTC_a50a9  /usr/lib/x86_64-linux-gnu/libcudart.so 
+        gmake[1]: Leaving directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.0
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:120 (try_run)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:180 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/utils.cmake:344 (cuda_select_nvcc_arch_flags)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:331 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+      binary: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2;/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0ce96/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0ce96.dir/build.make CMakeFiles/cmTC_0ce96.dir/build
+        gmake[1]: Entering directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_0ce96.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/bin/nvcc -forward-unknown-to-host-compiler   "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -MD -MT CMakeFiles/cmTC_0ce96.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_0ce96.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_0ce96.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_0ce96
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ce96.dir/link.txt --verbose=1
+        /usr/lib/nvidia-cuda-toolkit/bin/g++ @CMakeFiles/cmTC_0ce96.dir/objects1.rsp -o cmTC_0ce96 @CMakeFiles/cmTC_0ce96.dir/linkLibs.rsp -L"/usr/lib/x86_64-linux-gnu/stubs" -L"/usr/lib/x86_64-linux-gnu"
+        gmake[1]: Leaving directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.6 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:99 (try_run)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+      binary: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2;/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c059e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c059e.dir/build.make CMakeFiles/cmTC_c059e.dir/build
+        gmake[1]: Entering directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_c059e.dir/detect_cuda_version.cc.o
+        /usr/bin/c++    -o CMakeFiles/cmTC_c059e.dir/detect_cuda_version.cc.o -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/detect_cuda_version.cc
+        Linking CXX executable cmTC_c059e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c059e.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_c059e.dir/detect_cuda_version.cc.o -o cmTC_c059e  /usr/lib/x86_64-linux-gnu/libcudart.so 
+        gmake[1]: Leaving directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.0
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:120 (try_run)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:180 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/utils.cmake:344 (cuda_select_nvcc_arch_flags)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:331 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+      binary: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2;/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_02007/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_02007.dir/build.make CMakeFiles/cmTC_02007.dir/build
+        gmake[1]: Entering directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_02007.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/bin/nvcc -forward-unknown-to-host-compiler   "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -MD -MT CMakeFiles/cmTC_02007.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_02007.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_02007.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_02007
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02007.dir/link.txt --verbose=1
+        /usr/lib/nvidia-cuda-toolkit/bin/g++ @CMakeFiles/cmTC_02007.dir/objects1.rsp -o cmTC_02007 @CMakeFiles/cmTC_02007.dir/linkLibs.rsp -L"/usr/lib/x86_64-linux-gnu/stubs" -L"/usr/lib/x86_64-linux-gnu"
+        gmake[1]: Leaving directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.6 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:99 (try_run)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+      binary: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2;/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b05f4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b05f4.dir/build.make CMakeFiles/cmTC_b05f4.dir/build
+        gmake[1]: Entering directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_b05f4.dir/detect_cuda_version.cc.o
+        /usr/bin/c++    -o CMakeFiles/cmTC_b05f4.dir/detect_cuda_version.cc.o -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/detect_cuda_version.cc
+        Linking CXX executable cmTC_b05f4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b05f4.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_b05f4.dir/detect_cuda_version.cc.o -o cmTC_b05f4  /usr/lib/x86_64-linux-gnu/libcudart.so 
+        gmake[1]: Leaving directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.0
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:120 (try_run)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:180 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/utils.cmake:344 (cuda_select_nvcc_arch_flags)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:331 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+      binary: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2;/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aeb46/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_aeb46.dir/build.make CMakeFiles/cmTC_aeb46.dir/build
+        gmake[1]: Entering directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_aeb46.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/bin/nvcc -forward-unknown-to-host-compiler   "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -MD -MT CMakeFiles/cmTC_aeb46.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_aeb46.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_aeb46.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_aeb46
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aeb46.dir/link.txt --verbose=1
+        /usr/lib/nvidia-cuda-toolkit/bin/g++ @CMakeFiles/cmTC_aeb46.dir/objects1.rsp -o cmTC_aeb46 @CMakeFiles/cmTC_aeb46.dir/linkLibs.rsp -L"/usr/lib/x86_64-linux-gnu/stubs" -L"/usr/lib/x86_64-linux-gnu"
+        gmake[1]: Leaving directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.6 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:99 (try_run)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+      binary: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2;/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d3f83/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d3f83.dir/build.make CMakeFiles/cmTC_d3f83.dir/build
+        gmake[1]: Entering directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_d3f83.dir/detect_cuda_version.cc.o
+        /usr/bin/c++    -o CMakeFiles/cmTC_d3f83.dir/detect_cuda_version.cc.o -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/detect_cuda_version.cc
+        Linking CXX executable cmTC_d3f83
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3f83.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_d3f83.dir/detect_cuda_version.cc.o -o cmTC_d3f83  /usr/lib/x86_64-linux-gnu/libcudart.so 
+        gmake[1]: Leaving directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.0
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:120 (try_run)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:180 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/utils.cmake:344 (cuda_select_nvcc_arch_flags)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:331 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+      binary: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2;/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d11ec/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d11ec.dir/build.make CMakeFiles/cmTC_d11ec.dir/build
+        gmake[1]: Entering directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_d11ec.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/bin/nvcc -forward-unknown-to-host-compiler   "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -MD -MT CMakeFiles/cmTC_d11ec.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_d11ec.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_d11ec.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_d11ec
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d11ec.dir/link.txt --verbose=1
+        /usr/lib/nvidia-cuda-toolkit/bin/g++ @CMakeFiles/cmTC_d11ec.dir/objects1.rsp -o cmTC_d11ec @CMakeFiles/cmTC_d11ec.dir/linkLibs.rsp -L"/usr/lib/x86_64-linux-gnu/stubs" -L"/usr/lib/x86_64-linux-gnu"
+        gmake[1]: Leaving directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.6 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:99 (try_run)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+      binary: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2;/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0bc0f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0bc0f.dir/build.make CMakeFiles/cmTC_0bc0f.dir/build
+        gmake[1]: Entering directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_0bc0f.dir/detect_cuda_version.cc.o
+        /usr/bin/c++    -o CMakeFiles/cmTC_0bc0f.dir/detect_cuda_version.cc.o -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/detect_cuda_version.cc
+        Linking CXX executable cmTC_0bc0f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bc0f.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_0bc0f.dir/detect_cuda_version.cc.o -o cmTC_0bc0f  /usr/lib/x86_64-linux-gnu/libcudart.so 
+        gmake[1]: Leaving directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.0
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:120 (try_run)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:180 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/utils.cmake:344 (cuda_select_nvcc_arch_flags)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:331 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+      binary: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2;/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2e650/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2e650.dir/build.make CMakeFiles/cmTC_2e650.dir/build
+        gmake[1]: Entering directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_2e650.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/bin/nvcc -forward-unknown-to-host-compiler   "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -MD -MT CMakeFiles/cmTC_2e650.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_2e650.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_2e650.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_2e650
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e650.dir/link.txt --verbose=1
+        /usr/lib/nvidia-cuda-toolkit/bin/g++ @CMakeFiles/cmTC_2e650.dir/objects1.rsp -o cmTC_2e650 @CMakeFiles/cmTC_2e650.dir/linkLibs.rsp -L"/usr/lib/x86_64-linux-gnu/stubs" -L"/usr/lib/x86_64-linux-gnu"
+        gmake[1]: Leaving directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.6 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:99 (try_run)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+      binary: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2;/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8b730/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8b730.dir/build.make CMakeFiles/cmTC_8b730.dir/build
+        gmake[1]: Entering directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_8b730.dir/detect_cuda_version.cc.o
+        /usr/bin/c++    -o CMakeFiles/cmTC_8b730.dir/detect_cuda_version.cc.o -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/detect_cuda_version.cc
+        Linking CXX executable cmTC_8b730
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b730.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_8b730.dir/detect_cuda_version.cc.o -o cmTC_8b730  /usr/lib/x86_64-linux-gnu/libcudart.so 
+        gmake[1]: Leaving directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.0
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:120 (try_run)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:180 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/utils.cmake:344 (cuda_select_nvcc_arch_flags)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:331 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/home/heixiu/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
+    directories:
+      source: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+      binary: "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/heixiu/libtorch/libtorch/share/cmake/Caffe2;/home/heixiu/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_523dc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_523dc.dir/build.make CMakeFiles/cmTC_523dc.dir/build
+        gmake[1]: Entering directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_523dc.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/bin/nvcc -forward-unknown-to-host-compiler   "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -MD -MT CMakeFiles/cmTC_523dc.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_523dc.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_523dc.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_523dc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_523dc.dir/link.txt --verbose=1
+        /usr/lib/nvidia-cuda-toolkit/bin/g++ @CMakeFiles/cmTC_523dc.dir/objects1.rsp -o cmTC_523dc @CMakeFiles/cmTC_523dc.dir/linkLibs.rsp -L"/usr/lib/x86_64-linux-gnu/stubs" -L"/usr/lib/x86_64-linux-gnu"
+        gmake[1]: Leaving directory '/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test3_io_files/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.6 
+      exitCode: 0
+...

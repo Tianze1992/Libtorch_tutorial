@@ -63,6 +63,19 @@ int main()
     std::cout << "Device: " << tharray.device() << std::endl;
 
 
+    torch::Tensor tharray2 = torch::from_blob(flat_data.data(), {nz, nx}, options).clone().to(torch::kCPU);
+
+
+    std::ofstream file2("tensor_out.bin", std::ios::out | std::ios::binary);
+    if(!file2){
+        std::cerr <<  "failed to open file for writing" << std::endl;
+        return 1;
+    }
+    file2.write(reinterpret_cast<char*>(tharray2.data_ptr<float>()), tharray2.numel()*sizeof(float));
+    file2.close();
+
+
+
     
 
 
