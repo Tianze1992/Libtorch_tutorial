@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/heixiu/Tomography_code/Libtorch_tutorial/test1/test_1_Hello_world.cpp" "CMakeFiles/example-app.dir/test_1_Hello_world.cpp.o" "gcc" "CMakeFiles/example-app.dir/test_1_Hello_world.cpp.o.d"
+  "/home/tz/Documents/Libtorch_tutorial/test1_basic_print/test_1_Hello_world.cpp" "CMakeFiles/example-app.dir/test_1_Hello_world.cpp.o" "gcc" "CMakeFiles/example-app.dir/test_1_Hello_world.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

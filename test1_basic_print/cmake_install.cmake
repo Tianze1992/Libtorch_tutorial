@@ -1,4 +1,4 @@
-# Install script for directory: /home/heixiu/Tomography_code/Libtorch_tutorial/test1
+# Install script for directory: /home/tz/Documents/Libtorch_tutorial/test1_basic_print
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/heixiu/Tomography_code/Libtorch_tutorial/test1/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tz/Documents/Libtorch_tutorial/test1_basic_print/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
