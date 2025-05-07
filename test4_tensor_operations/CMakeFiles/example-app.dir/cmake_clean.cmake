@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/example-app.dir/creating_tensors.cpp.o"
-  "CMakeFiles/example-app.dir/creating_tensors.cpp.o.d"
+  "CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o"
+  "CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o.d"
   "example-app"
   "example-app.pdb"
 )

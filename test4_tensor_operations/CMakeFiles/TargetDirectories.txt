@@ -1,3 +1,3 @@
-/home/tz/Documents/Libtorch_tutorial/test4_tensor_operations/CMakeFiles/example-app.dir
-/home/tz/Documents/Libtorch_tutorial/test4_tensor_operations/CMakeFiles/edit_cache.dir
-/home/tz/Documents/Libtorch_tutorial/test4_tensor_operations/CMakeFiles/rebuild_cache.dir
+/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations/CMakeFiles/example-app.dir
+/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations/CMakeFiles/edit_cache.dir
+/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations/CMakeFiles/rebuild_cache.dir

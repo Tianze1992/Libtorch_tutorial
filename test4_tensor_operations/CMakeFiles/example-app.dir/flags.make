@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DUSE_C10D_GLOO -DUSE_C10D_NCCL -DUSE_DISTRIBUTED -DUSE_RPC -DUSE_TENSORPIPE
 
-CXX_INCLUDES = -isystem /home/tz/Documents/libtorch_scr/libtorch/include -isystem /home/tz/Documents/libtorch_scr/libtorch/include/torch/csrc/api/include
+CXX_INCLUDES = -isystem /home/heixiu/libtorch/libtorch/include -isystem /home/heixiu/libtorch/libtorch/include/torch/csrc/api/include
 
 CXX_FLAGS =  -D_GLIBCXX_USE_CXX11_ABI=1 -std=gnu++17 -D_GLIBCXX_USE_CXX11_ABI=1
 

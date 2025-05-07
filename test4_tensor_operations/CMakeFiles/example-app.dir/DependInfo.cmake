@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/tz/Documents/Libtorch_tutorial/test4_tensor_operations/creating_tensors.cpp" "CMakeFiles/example-app.dir/creating_tensors.cpp.o" "gcc" "CMakeFiles/example-app.dir/creating_tensors.cpp.o.d"
+  "/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations/creating_tensors_cuda.cpp" "CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o" "gcc" "CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

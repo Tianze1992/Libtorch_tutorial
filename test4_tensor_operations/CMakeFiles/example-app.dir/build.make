@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations
+CMAKE_SOURCE_DIR = /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations
+CMAKE_BINARY_DIR = /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations
 
 # Include any dependencies generated for this target.
 include CMakeFiles/example-app.dir/depend.make
@@ -69,40 +69,40 @@ include CMakeFiles/example-app.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/example-app.dir/flags.make
 
-CMakeFiles/example-app.dir/creating_tensors.cpp.o: CMakeFiles/example-app.dir/flags.make
-CMakeFiles/example-app.dir/creating_tensors.cpp.o: creating_tensors.cpp
-CMakeFiles/example-app.dir/creating_tensors.cpp.o: CMakeFiles/example-app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tz/Documents/Libtorch_tutorial/test4_tensor_operations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/example-app.dir/creating_tensors.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/example-app.dir/creating_tensors.cpp.o -MF CMakeFiles/example-app.dir/creating_tensors.cpp.o.d -o CMakeFiles/example-app.dir/creating_tensors.cpp.o -c /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations/creating_tensors.cpp
+CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o: CMakeFiles/example-app.dir/flags.make
+CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o: creating_tensors_cuda.cpp
+CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o: CMakeFiles/example-app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o -MF CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o.d -o CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o -c /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations/creating_tensors_cuda.cpp
 
-CMakeFiles/example-app.dir/creating_tensors.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/example-app.dir/creating_tensors.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations/creating_tensors.cpp > CMakeFiles/example-app.dir/creating_tensors.cpp.i
+CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations/creating_tensors_cuda.cpp > CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.i
 
-CMakeFiles/example-app.dir/creating_tensors.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/example-app.dir/creating_tensors.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations/creating_tensors.cpp -o CMakeFiles/example-app.dir/creating_tensors.cpp.s
+CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations/creating_tensors_cuda.cpp -o CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.s
 
 # Object files for target example-app
 example__app_OBJECTS = \
-"CMakeFiles/example-app.dir/creating_tensors.cpp.o"
+"CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o"
 
 # External object files for target example-app
 example__app_EXTERNAL_OBJECTS =
 
-example-app: CMakeFiles/example-app.dir/creating_tensors.cpp.o
+example-app: CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o
 example-app: CMakeFiles/example-app.dir/build.make
-example-app: /home/tz/Documents/libtorch_scr/libtorch/lib/libtorch.so
-example-app: /home/tz/Documents/libtorch_scr/libtorch/lib/libc10.so
-example-app: /home/tz/Documents/libtorch_scr/libtorch/lib/libkineto.a
+example-app: /home/heixiu/libtorch/libtorch/lib/libtorch.so
+example-app: /home/heixiu/libtorch/libtorch/lib/libc10.so
+example-app: /home/heixiu/libtorch/libtorch/lib/libkineto.a
 example-app: /usr/lib/x86_64-linux-gnu/libnvrtc.so
-example-app: /home/tz/Documents/libtorch_scr/libtorch/lib/libc10_cuda.so
-example-app: /home/tz/Documents/libtorch_scr/libtorch/lib/libc10_cuda.so
-example-app: /home/tz/Documents/libtorch_scr/libtorch/lib/libc10.so
+example-app: /home/heixiu/libtorch/libtorch/lib/libc10_cuda.so
+example-app: /home/heixiu/libtorch/libtorch/lib/libc10_cuda.so
+example-app: /home/heixiu/libtorch/libtorch/lib/libc10.so
 example-app: /usr/lib/x86_64-linux-gnu/libcudart.so
 example-app: /usr/lib/x86_64-linux-gnu/libnvToolsExt.so
 example-app: CMakeFiles/example-app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/tz/Documents/Libtorch_tutorial/test4_tensor_operations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable example-app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable example-app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example-app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -114,6 +114,6 @@ CMakeFiles/example-app.dir/clean:
 .PHONY : CMakeFiles/example-app.dir/clean
 
 CMakeFiles/example-app.dir/depend:
-	cd /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations/CMakeFiles/example-app.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations/CMakeFiles/example-app.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/example-app.dir/depend
 

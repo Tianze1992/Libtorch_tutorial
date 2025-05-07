@@ -11,9 +11,6 @@ int main()
         std::cout << "CUDA is NOT available. Running on CPU." << std::endl;
     }
 
-
-
-
     std::ifstream file("matrix.bin", std::ios::binary);
     if (!file){
         std::cout << "can not open the target file" << std::endl;

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations
+CMAKE_SOURCE_DIR = /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations
+CMAKE_BINARY_DIR = /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations/CMakeFiles /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations/CMakeFiles /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tz/Documents/Libtorch_tutorial/test4_tensor_operations/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,29 @@ example-app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-app.dir/build.make CMakeFiles/example-app.dir/build
 .PHONY : example-app/fast
 
-creating_tensors.o: creating_tensors.cpp.o
-.PHONY : creating_tensors.o
+creating_tensors_cuda.o: creating_tensors_cuda.cpp.o
+.PHONY : creating_tensors_cuda.o
 
 # target to build an object file
-creating_tensors.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-app.dir/build.make CMakeFiles/example-app.dir/creating_tensors.cpp.o
-.PHONY : creating_tensors.cpp.o
+creating_tensors_cuda.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-app.dir/build.make CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o
+.PHONY : creating_tensors_cuda.cpp.o
 
-creating_tensors.i: creating_tensors.cpp.i
-.PHONY : creating_tensors.i
+creating_tensors_cuda.i: creating_tensors_cuda.cpp.i
+.PHONY : creating_tensors_cuda.i
 
 # target to preprocess a source file
-creating_tensors.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-app.dir/build.make CMakeFiles/example-app.dir/creating_tensors.cpp.i
-.PHONY : creating_tensors.cpp.i
+creating_tensors_cuda.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-app.dir/build.make CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.i
+.PHONY : creating_tensors_cuda.cpp.i
 
-creating_tensors.s: creating_tensors.cpp.s
-.PHONY : creating_tensors.s
+creating_tensors_cuda.s: creating_tensors_cuda.cpp.s
+.PHONY : creating_tensors_cuda.s
 
 # target to generate assembly for a file
-creating_tensors.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-app.dir/build.make CMakeFiles/example-app.dir/creating_tensors.cpp.s
-.PHONY : creating_tensors.cpp.s
+creating_tensors_cuda.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-app.dir/build.make CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.s
+.PHONY : creating_tensors_cuda.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... example-app"
-	@echo "... creating_tensors.o"
-	@echo "... creating_tensors.i"
-	@echo "... creating_tensors.s"
+	@echo "... creating_tensors_cuda.o"
+	@echo "... creating_tensors_cuda.i"
+	@echo "... creating_tensors_cuda.s"
 .PHONY : help
 
 

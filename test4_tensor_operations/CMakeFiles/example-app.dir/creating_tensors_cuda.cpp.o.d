@@ -1,5 +1,5 @@
-CMakeFiles/example-app.dir/creating_tensors.cpp.o: \
- /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations/creating_tensors.cpp \
+CMakeFiles/example-app.dir/creating_tensors_cuda.cpp.o: \
+ /home/heixiu/Tomography_code/Libtorch_tutorial/Libtorch_tutorial/test4_tensor_operations/creating_tensors_cuda.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
