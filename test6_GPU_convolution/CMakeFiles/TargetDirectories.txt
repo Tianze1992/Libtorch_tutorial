@@ -1,0 +1,3 @@
+/home/tz/Documents/Libtorch_tutorial/test6_GPU_convolution/CMakeFiles/main.dir
+/home/tz/Documents/Libtorch_tutorial/test6_GPU_convolution/CMakeFiles/edit_cache.dir
+/home/tz/Documents/Libtorch_tutorial/test6_GPU_convolution/CMakeFiles/rebuild_cache.dir
