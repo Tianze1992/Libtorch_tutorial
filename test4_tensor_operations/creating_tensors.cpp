@@ -22,8 +22,12 @@ int main(){
 
 
     // Simulate a 2D image: batch=1, channels=1, height=64 width=64
+<<<<<<< Updated upstream
     torch::Tensor input_2d = torch::rand({1, 1, 32, 64}, torch::kFloat32);  // OK for conv1d
 
+=======
+    torch::Tensor input_2d = torch::rand({1, 1, 64, 64}, torch::kFloat32);  // OK for conv1d
+>>>>>>> Stashed changes
     // Define 1D kernel horizontal layout: shape [batch, channels , kernel_size_z, kernel_size_x]
     torch::Tensor kernel_2d_h = torch::tensor({{{{1, -1,  1,}}}}, torch::dtype(torch::kFloat32));
     // Define 1D kernel vertical layout: shape [batch, channels , kernel_size_z, kernel_size_x]
